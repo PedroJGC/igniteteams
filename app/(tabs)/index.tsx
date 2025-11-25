@@ -1,5 +1,5 @@
-import { Home } from '../components/Home'
+import { Groups } from '../components/Groups'
 
 export default function Index() {
-  return <Home />
+  return <Groups />
 }
