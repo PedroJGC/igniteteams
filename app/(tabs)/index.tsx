@@ -3,9 +3,9 @@ import {
   Roboto_700Bold,
   useFonts,
 } from '@expo-google-fonts/roboto'
-import { ActivityIndicator } from 'react-native'
 import { ThemeProvider } from 'styled-components'
-import { Groups } from '../components/Groups'
+import { Loading } from '../components/Loading'
+import { Groups } from '../screens/Groups'
 import theme from '../theme'
 
 export default function Index() {
@@ -16,7 +16,7 @@ export default function Index() {
 
   return (
     <ThemeProvider theme={theme}>
-      {fontsLoaded ? <Groups /> : <ActivityIndicator />}
+      {fontsLoaded ? <Groups /> : <Loading />}
     </ThemeProvider>
   )
 }
